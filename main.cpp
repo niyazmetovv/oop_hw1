@@ -48,7 +48,7 @@ int main() {
     int indexOfCourse = -1;
      for(int i = 0; i < a; i++) {
          int sID;
-         int cID;
+         string cID;
          cin >> sID >> cID;
 
          for(int j = 0; j < courses.size(); j++) {
