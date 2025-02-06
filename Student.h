@@ -13,10 +13,10 @@ class Student {
   private:
     int id;
     string name;
-
+    vector<int> enrolledCourses;
     static const int MAX_ALLOWED_CREDITS = 18;
     public:
-    vector<int> enrolledCourses;
+
 
     Student(int id, string name) {
         this->id = id;

@@ -52,8 +52,7 @@ void Student::printDetails() {
     cout << "Student ID: " << getId() << ", Name: " << getName() << endl;
     cout << "Enrolled Courses: ";
     for (int enrolledCourse : enrolledCourses) {
-        cout << enrolledCourse;
-        cout << " ";
+        cout << enrolledCourse << " ";
     }
     cout << endl;
 }

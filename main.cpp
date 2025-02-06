@@ -19,7 +19,6 @@ int main() {
 
     cin.ignore();
 
-    Student* ptr;
 
     for (int i = 0; i < nSt; i++) {
         int id;
@@ -28,10 +27,8 @@ int main() {
         Student s(id, name);
         students.push_back(s);
         lms.addStudent(s);
-        ptr = &s;
     }
 
-    Course* ptr1;
 
     int nc;
     cin>>nc;
@@ -43,7 +40,6 @@ int main() {
         Course c(id, name, credit);
         courses.push_back(c);
         lms.addCourse(c);
-        ptr1 = &c;
     }
 
     int a;

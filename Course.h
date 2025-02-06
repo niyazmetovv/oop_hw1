@@ -14,10 +14,10 @@ private:
     int id;
     string name;
     int credits;
-
+    vector<int> students;
 
 public:
-    vector<int> students;
+
     Course(int courseId, string &courseName, int courseCredits) {
         this->id = courseId;
         this->name = courseName;

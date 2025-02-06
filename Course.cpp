@@ -47,7 +47,6 @@ void Course::printDetails() {
     cout << "Enrolled Students: ";
     for (int student : students) {
         cout << student;
-        cout << " ";
     }
     cout << endl;
     }

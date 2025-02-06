@@ -39,7 +39,7 @@ void LMS::printDetails() {
     for (auto& student : students) {
         student.printDetails();
     }
-    cout << "Courses: " << endl;
+    cout << " Courses: " << endl;
     for (auto& course : courses) {
         course.printDetails();
     }
