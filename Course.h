@@ -11,19 +11,19 @@ class Student;
 
 class Course {
 private:
-    int id;
+    string id;
     string name;
     int credits;
     vector<int> students;
 
 public:
 
-    Course(int courseId, string &courseName, int courseCredits) {
+    Course(string& courseId, string &courseName, int courseCredits) {
         this->id = courseId;
         this->name = courseName;
         this->credits = courseCredits;
     };
-    int getId() const;
+    string getId() const;
     string getName() const;
     int getCredits() const;
 

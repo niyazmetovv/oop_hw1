@@ -7,7 +7,7 @@
 using namespace std;
 
 
-int Course::getId() const{
+string Course::getId() const{
     return id;
 }
 

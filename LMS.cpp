@@ -25,11 +25,8 @@ void LMS::addCourse(Course& course) {
 }
 
 void LMS::addStudentToCourse( Student& student, Course& course) {
-
         student.takeCourse(course);
         course.addStudent(student);
-
-
 }
 
 

@@ -34,8 +34,8 @@ int main() {
     cin>>nc;
 
     for(int i = 0; i < nc; i++){
-        string name;
-        int id, credit;
+        string name, id;
+        int credit;
         cin>> id >> name >> credit;
         Course c(id, name, credit);
         courses.push_back(c);
