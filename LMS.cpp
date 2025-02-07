@@ -2,21 +2,21 @@
 #include <string>
 #include <vector>
 #include "LMS.h"
-#include "student.h"
+#include "stident.h"
 #include "course.h"
 
 using namespace std;
 
-class Student;
+class stident;
 
-Student& LMS::getStudents(int index) {
+stident& LMS::getStudents(int index) {
     return students[index];
 }
 Course& LMS::getCourses(int index) {
     return courses[index];
 }
 
-void LMS::addStudent(Student& student) {
+void LMS::addStudent(stident& student) {
     students.push_back(student);
 }
 
@@ -24,7 +24,7 @@ void LMS::addCourse(Course& course) {
     courses.push_back(course);
 }
 
-void LMS::addStudentToCourse( Student& student, Course& course) {
+void LMS::addStudentToCourse( stident& student, Course& course) {
         student.takeCourse(course);
         course.addStudent(student);
 }

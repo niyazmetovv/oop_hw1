@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "student.h"
+#include "stident.h"
 #include "course.h"
 #include "lms.h"
 using namespace std;
@@ -11,7 +11,7 @@ int main() {
     getline(cin, nLMS);
     LMS lms(nLMS);
 
-    vector<Student> students;
+    vector<stident> students;
     vector<Course> courses;
 
     int nSt;
@@ -24,7 +24,7 @@ int main() {
         int id;
         string name;
         cin >> id >> name;
-        Student s(id, name);
+        stident s(id, name);
         students.push_back(s);
         lms.addStudent(s);
     }
@@ -71,7 +71,7 @@ int main() {
          if(indexOfStudent == -1) {
              continue;
          }
-lms.addStudentToCourse(lms.getStudents(indexOfStudent), lms.getCourses(indexOfCourse));
+     lms.addStudentToCourse(lms.getStudents(indexOfStudent), lms.getCourses(indexOfCourse));
      }
 
 

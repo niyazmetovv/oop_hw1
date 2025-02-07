@@ -9,7 +9,7 @@ using namespace std;
 
 
 
-class Student {
+class stident {
   private:
     int id;
     string name;
@@ -18,7 +18,7 @@ class Student {
     public:
 
 
-    Student(int id, string name) {
+    stident(int id, string name) {
         this->id = id;
         this->name = name;
     };

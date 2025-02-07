@@ -1,26 +1,26 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Student.h"
+#include "stident.h"
 #include "course.h"
 
 using namespace std;
 
 
-int Student::getId() const{
+int stident::getId() const{
     return id;
 }
 
-string Student::getName() const {
+string stident::getName() const {
     return name;
 }
 
-const vector<int>& Student::getEnrolledCourses() const {
+const vector<int>& stident::getEnrolledCourses() const {
     return enrolledCourses;
 }
 
 
-bool Student::takesCourse(Course& course) {
+bool stident::takesCourse(Course& course) {
     for (int i = 0; i < enrolledCourses.size(); i++) {
         if(enrolledCourses[i] == stoi(course.getId())) {
             return true;
@@ -29,7 +29,7 @@ bool Student::takesCourse(Course& course) {
     return false;
 }
 
-bool Student::takeCourse(Course& course) {
+bool stident::takeCourse(Course& course) {
 
     if(!takesCourse(course)) {
         if(course.getCredits() < MAX_ALLOWED_CREDITS) {
@@ -40,7 +40,7 @@ bool Student::takeCourse(Course& course) {
     return false;
 }
 
-void Student::dropCourse(Course& course) {
+void stident::dropCourse(Course& course) {
     for (int i = 0; i < enrolledCourses.size(); i++) {
         if(enrolledCourses[i] == stoi(course.getId())) {
             enrolledCourses.erase(enrolledCourses.begin() + i);
@@ -48,7 +48,7 @@ void Student::dropCourse(Course& course) {
     }
 }
 
-void Student::printDetails() {
+void stident::printDetails() {
     cout << "Student ID: " << getId() << ", Name: " << getName() << endl;
     cout << "Enrolled Courses: ";
     for (int enrolledCourse : enrolledCourses) {

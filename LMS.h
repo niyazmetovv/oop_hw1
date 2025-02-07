@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "student.h"
+#include "stident.h"
 #include "course.h"
 
 using namespace std;
@@ -11,20 +11,20 @@ using namespace std;
 class LMS {
 private:
     string name;
-    vector<Student> students;
+    vector<stident> students;
     vector<Course> courses;
     public:
     LMS(string name) {
         this->name = name;
     }
 
-    void addStudent(Student& student);
+    void addStudent(stident& student);
     void addCourse(Course& course);
-    Student& getStudents(int index);
+    stident& getStudents(int index);
     Course& getCourses(int index);
 
 
-    void addStudentToCourse( Student& student, Course& course);
+    void addStudentToCourse( stident& student, Course& course);
 
     void printDetails();
 };

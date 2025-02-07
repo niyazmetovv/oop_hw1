@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class Student;
+class stident;
 
 class Course {
 private:
@@ -27,9 +27,9 @@ public:
     string getName() const;
     int getCredits() const;
 
-    bool hasStudent(Student& student);
-    void addStudent(Student& student);
-    void dropStudent(Student& student);
+    bool hasStudent(stident& student);
+    void addStudent(stident& student);
+    void dropStudent(stident& student);
     void printDetails();
 
     const vector<int>& getEnrolledStudents() const;

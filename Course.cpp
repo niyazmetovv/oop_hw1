@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 #include "Course.h"
-#include "student.h"
+#include "stident.h"
 
 using namespace std;
 
@@ -20,7 +20,7 @@ int Course::getCredits() const {
 }
 
 
-bool Course::hasStudent(Student& student) {
+bool Course::hasStudent(stident& student) {
     for (int i = 0; i < students.size(); i++) {
         if(students[i] == student.getId()) {
             return true;
@@ -29,12 +29,12 @@ bool Course::hasStudent(Student& student) {
     return false;
 }
 
-void Course::addStudent(Student& student) {
+void Course::addStudent(stident& student) {
         students.push_back(student.getId());
 
 }
 
-void Course::dropStudent(Student& student) {
+void Course::dropStudent(stident& student) {
     for (int i = 0; i < students.size(); i++) {
         if(students[i] == student.getId()) {
             students.erase(students.begin() + i);
