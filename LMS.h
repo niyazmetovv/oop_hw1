@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 #include "stident.h"
-#include "course.h"
+#include "Course.h"
 
 using namespace std;
 
