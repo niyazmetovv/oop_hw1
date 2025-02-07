@@ -49,7 +49,7 @@ int main() {
      for(int i = 0; i < n; i++) {
          int student_id;
          string course_id;
-         cin >> sID >> cID;
+         cin >> student_id >> course_id;
 
          for(int j = 0; j < courses.size(); j++) {
              if(course_id == courses[j].getId()) {
@@ -75,7 +75,7 @@ int main() {
      }
 
 
-    lms.printDetails();
+    myLMS.printDetails();
 
 
 
