@@ -7,15 +7,15 @@
 using namespace std;
 
 
-string Course::getId() const{
+string Course::getId(){
     return id;
 }
 
-string Course::getName() const {
+string Course::getName()  {
     return name;
 }
 
-int Course::getCredits() const {
+int Course::getCredits() {
     return credits;
 }
 
@@ -51,7 +51,7 @@ void Course::printDetails() {
     cout << endl;
     }
 
-const vector<int> &Course::getEnrolledStudents() const {
+vector<int> &Course::getEnrolledStudents()  {
     return students;
 }
 

@@ -23,9 +23,9 @@ class stident {
         this->name = name;
     };
 
-    int getId() const;
-    string getName() const;
-    const vector<int>& getEnrolledCourses() const;
+    int getId() ;
+    string getName() ;
+    vector<int>& getEnrolledCourses();
 
     bool takesCourse(Course& course) ;
     bool takeCourse(Course& course) ;
