@@ -46,8 +46,7 @@ void Course::printDetails() {
     cout << "Course ID: " << getId() << ", Name: " << getName() << ", Credits: " << getCredits() << endl;
     cout << "Enrolled Students: ";
     for (int student : students) {
-        cout << student;
-
+        cout << student << " ";
     }
     cout << endl;
     }
