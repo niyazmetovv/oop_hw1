@@ -3,7 +3,7 @@
 #include <vector>
 #include "LMS.h"
 #include "stident.h"
-#include "course.h"
+#include "Course.h"
 
 using namespace std;
 
