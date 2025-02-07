@@ -2,14 +2,14 @@
 #include <string>
 #include <vector>
 #include "stident.h"
-#include "course.h"
-#include "lms.h"
+#include "Course.h"
+#include "LMS.h"
 using namespace std;
 
 int main() {
     string nameLMS;
     getline(cin, nameLMS);
-    LMS myLMS(nLMS);
+    LMS myLMS(nameLMS);
 
     vector<stident> students;
     vector<Course> courses;
@@ -39,7 +39,7 @@ int main() {
         cin>> id >> name >> credit;
         Course c1(id, name, credit);
         courses.push_back(c1);
-        lms.addCourse(c1);
+        myLMS.addCourse(c1);
     }
 
     int n;
