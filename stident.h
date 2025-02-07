@@ -3,19 +3,19 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "course.h"
+#include "Course.h"
 
 using namespace std;
 
 
 
 class stident {
-  private:
+private:
     int id;
     string name;
     vector<int> enrolledCourses;
     static const int MAX_ALLOWED_CREDITS = 18;
-    public:
+public:
 
 
     stident(int id, string name) {
@@ -23,9 +23,9 @@ class stident {
         this->name = name;
     };
 
-    int getId() const;
-    string getName() const;
-    const vector<int>& getEnrolledCourses() const;
+    int getId() ;
+    string getName() ;
+    vector<int>& getEnrolledCourses();
 
     bool takesCourse(Course& course) ;
     bool takeCourse(Course& course) ;

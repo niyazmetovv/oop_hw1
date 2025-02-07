@@ -2,20 +2,20 @@
 #include <string>
 #include <vector>
 #include "stident.h"
-#include "course.h"
+#include "Course.h"
 
 using namespace std;
 
 
-int stident::getId() const{
+int stident::getId() {
     return id;
 }
 
-string stident::getName() const {
+string stident::getName()  {
     return name;
 }
 
-const vector<int>& stident::getEnrolledCourses() const {
+vector<int>& stident::getEnrolledCourses()  {
     return enrolledCourses;
 }
 

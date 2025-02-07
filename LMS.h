@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 #include "stident.h"
-#include "course.h"
+#include "Course.h"
 
 using namespace std;
 
@@ -13,7 +13,7 @@ private:
     string name;
     vector<stident> students;
     vector<Course> courses;
-    public:
+public:
     LMS(string name) {
         this->name = name;
     }

@@ -23,16 +23,16 @@ public:
         this->name = courseName;
         this->credits = courseCredits;
     };
-    string getId() const;
-    string getName() const;
-    int getCredits() const;
+    string getId();
+    string getName() ;
+    int getCredits() ;
 
     bool hasStudent(stident& student);
     void addStudent(stident& student);
     void dropStudent(stident& student);
     void printDetails();
 
-    const vector<int>& getEnrolledStudents() const;
+    vector<int>& getEnrolledStudents();
 
 };
 

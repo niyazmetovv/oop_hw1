@@ -7,15 +7,15 @@
 using namespace std;
 
 
-string Course::getId() const{
+string Course::getId(){
     return id;
 }
 
-string Course::getName() const {
+string Course::getName()  {
     return name;
 }
 
-int Course::getCredits() const {
+int Course::getCredits() {
     return credits;
 }
 
@@ -30,7 +30,7 @@ bool Course::hasStudent(stident& student) {
 }
 
 void Course::addStudent(stident& student) {
-        students.push_back(student.getId());
+    students.push_back(student.getId());
 
 }
 
@@ -46,18 +46,11 @@ void Course::printDetails() {
     cout << "Course ID: " << getId() << ", Name: " << getName() << ", Credits: " << getCredits() << endl;
     cout << "Enrolled Students: ";
     for (int student : students) {
-        cout << student;
-
+        cout << student << " ";
     }
     cout << endl;
-    }
-
-const vector<int> &Course::getEnrolledStudents() const {
-    return students;
 }
 
-
-
-
-
-
+vector<int> &Course::getEnrolledStudents()  {
+    return students;
+}

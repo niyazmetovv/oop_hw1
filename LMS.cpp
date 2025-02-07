@@ -3,7 +3,7 @@
 #include <vector>
 #include "LMS.h"
 #include "stident.h"
-#include "course.h"
+#include "Course.h"
 
 using namespace std;
 
@@ -25,8 +25,8 @@ void LMS::addCourse(Course& course) {
 }
 
 void LMS::addStudentToCourse( stident& student, Course& course) {
-        student.takeCourse(course);
-        course.addStudent(student);
+    student.takeCourse(course);
+    course.addStudent(student);
 }
 
 
@@ -41,4 +41,3 @@ void LMS::printDetails() {
         course.printDetails();
     }
 }
-
